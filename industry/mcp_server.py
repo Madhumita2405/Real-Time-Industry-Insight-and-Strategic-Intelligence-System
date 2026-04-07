@@ -23,7 +23,7 @@ from serpapi.google_search import GoogleSearch
 # ── Load env (resolve relative to this file so subprocess spawning works) ────
 _env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env")
 load_dotenv(_env_path)
-SERP_API_KEY = st.secrets["SERP_API_KEY"]
+SERP_KEY = st.secrets["SERP_API_KEY"]
 
 # ── FastMCP instance ────────────────────────────────────────────────────────
 mcp = FastMCP("Industry Intelligence Server")
